@@ -3,5 +3,6 @@ yum install git -y
 git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
 yum install httpd -y
 yum install tomcat7 -y
-service httpd start
-service tomcat7 start
+cp /Bootstrap/index.html /var/www/html/.
+/etc/init.d/tomcat7 start
+/etc/init.d/httpd start
