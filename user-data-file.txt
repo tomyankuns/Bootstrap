@@ -3,7 +3,8 @@ yum install git -y
 git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
 yum install httpd -y
 yum install tomcat7 -y
-unalias cp
+echo 'unalias cp' > unalias.sh
+unalias.sh
 cp -f /Bootstrap/index.html /var/www/html/.
 cp -f /Bootstrap/httpd.conf /etc/httpd/conf/.
 cp -f /Bootstrap/httpd-proxy.conf /etc/httpd/conf/.
