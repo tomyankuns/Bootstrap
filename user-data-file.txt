@@ -4,8 +4,8 @@ git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
 yum install httpd -y
 yum install tomcat7 -y
 cp -f /Bootstrap/index.html /var/www/html/.
-\cp -f /Bootstrap/httpd.conf /etc/httpd/conf/.
+cp -f /Bootstrap/httpd.conf /etc/httpd/conf/httpd2.conf
 cp -f /Bootstrap/httpd-proxy.conf /etc/httpd/conf/.
 cp -f /Bootstrap/PicturePostService.war /usr/share/tomcat7/webapps/.
 /etc/init.d/tomcat7 start
-/etc/init.d/httpd start
+apachectl -f /etc/httpd/conf/httpd2.conf start
