@@ -1,12 +1,12 @@
 #!/bin/sh
-#yum update -y
-#yum install git -y
+yum update -y
+yum install git -y
 git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
-#yum install httpd -y
-#yum install tomcat7 -y
-#cp -f /Bootstrap/index.html /var/www/html/.
-#cp -f /Bootstrap/httpd.conf /etc/httpd/conf/httpd.conf
-#cp -f /Bootstrap/httpd-proxy.conf /etc/httpd/conf/.
-cp -f /Bootstrap/PicturePostService.war /usr/share/tomcat7/webapps/.
+yum install httpd -y
+yum install tomcat7 -y
+cp -n /Bootstrap/index.html /var/www/html/.
+cp -n /Bootstrap/httpd.conf /etc/httpd/conf/.
+cp -n /Bootstrap/httpd-proxy.conf /etc/httpd/conf/.
+cp -n /Bootstrap/PicturePostService.war /usr/share/tomcat7/webapps/.
 /etc/init.d/tomcat7 start
 /etc/init.d/httpd start
