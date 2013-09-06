@@ -1,5 +1,0 @@
-#!/bin/sh
-yum update -y
-yum install git -y
-git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
-yum install imagemagick -y
