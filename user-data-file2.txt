@@ -1,9 +1,11 @@
 #!/bin/sh
 yum install git -y
 git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
-yum install imagemagick -y
+yum install ImageMagick -y
 mkdir /opt/imagedata/
-mv imagemagick.sh ProcessingServices.jar ProcessingServices.jar /opt/imagedata/
+mv /Bootstrap/imagemagick.sh /opt/imagedata/
+mv /Bootstrap/ProcessingServices.jar /opt/imagedata/
+mv /Bootstrap/ProcessingServices.jar /opt/imagedata/
 chmod 777 /opt/imagedata/ProcessingService.sh
 chmod 777 /opt/imagedata/imagemagick.sh
 chmod 777 /opt/imagedata/ProcessingServices.jar
