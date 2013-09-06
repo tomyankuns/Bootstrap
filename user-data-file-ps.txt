@@ -9,4 +9,5 @@ cp /Bootstrap/ProcessingServices.jar /opt/imagedata/
 chmod 777 /opt/imagedata/ProcessingService.sh
 chmod 777 /opt/imagedata/imagemagick.sh
 chmod 777 /opt/imagedata/ProcessingServices.jar
-/opt/imagedata/ProcessingService.sh &
+#/opt/imagedata/ProcessingService.sh &
+java -jar /opt/imagedata/ProcessingServices.jar ProcessingServices &
