@@ -4,6 +4,7 @@ git clone https://github.com/tomyankuns/Bootstrap.git /Bootstrap
 yum install imagemagick -y
 mkdir /opt/imagedata/
 mv imagemagick.sh ProcessingServices.jar ProcessingServices.jar /opt/imagedata/
-chmod 777 ProcessingService.sh
-chmod 777 imagemagick.sh
-chmod 777 ProcessingServices.jar
+chmod 777 /opt/imagedata/ProcessingService.sh
+chmod 777 /opt/imagedata/imagemagick.sh
+chmod 777 /opt/imagedata/ProcessingServices.jar
+/opt/imagedata/ProcessingService.sh
