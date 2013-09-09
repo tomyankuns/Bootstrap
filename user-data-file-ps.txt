@@ -6,8 +6,10 @@ mkdir /opt/imagedata/
 cp /Bootstrap/imagemagick.sh /opt/imagedata/
 cp /Bootstrap/ProcessingService.sh /opt/imagedata/
 cp /Bootstrap/ProcessingServices.jar /opt/imagedata/
-chmod 777 /opt/imagedata/ProcessingService.sh
-chmod 777 /opt/imagedata/imagemagick.sh
-chmod 777 /opt/imagedata/ProcessingServices.jar
+cp /Bootstrap/wgetkick.sh /opt/imagedata/
+chmod 744 /opt/imagedata/ProcessingService.sh
+chmod 744 /opt/imagedata/imagemagick.sh
+chmod 744 /opt/imagedata/ProcessingServices.jar
+chmod 744 /opt/imagedata/wgetkick.sh
 #/opt/imagedata/ProcessingService.sh &
 java -jar /opt/imagedata/ProcessingServices.jar ProcessingServices &
